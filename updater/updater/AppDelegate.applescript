@@ -18,6 +18,7 @@ script AppDelegate
         tell appupdateProgressBar to startAnimation:me -- another way
         set animated to true
         do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.7; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.7; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
+        display notification "OpenPlex Updated" with title "OpenPlex Status"
         tell appupdateProgressBar to stopAnimation:me -- another way
         set animated to false
     end buttonhandlerupdate_
@@ -26,6 +27,7 @@ script AppDelegate
         tell appupdate10ProgressBar to startAnimation:me -- another way
         set animated to true
          do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.6; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.6; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
+         display notification "OpenPlex Updated" with title "OpenPlex Status"
         tell appupdate10ProgressBar to stopAnimation:me -- another way
         set animated to false
     end buttonhandlerupdate10_

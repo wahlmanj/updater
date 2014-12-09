@@ -12,6 +12,13 @@
 		CE5B3D551A36D8D000730A8C /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3D541A36D8D000730A8C /* AppDelegate.applescript */; };
 		CE5B3D571A36D8D000730A8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D561A36D8D000730A8C /* Images.xcassets */; };
 		CE5B3D5A1A36D8D000730A8C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D581A36D8D000730A8C /* MainMenu.xib */; };
+		CE5B3D681A36EFE600730A8C /* opicon_<1024x1024>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D611A36EFE600730A8C /* opicon_<1024x1024>.png */; };
+		CE5B3D691A36EFE600730A8C /* opicon_<128x128>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D621A36EFE600730A8C /* opicon_<128x128>.png */; };
+		CE5B3D6A1A36EFE600730A8C /* opicon_<16x16>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D631A36EFE600730A8C /* opicon_<16x16>.png */; };
+		CE5B3D6B1A36EFE600730A8C /* opicon_<256x256>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D641A36EFE600730A8C /* opicon_<256x256>.png */; };
+		CE5B3D6C1A36EFE600730A8C /* opicon_<32x32>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D651A36EFE600730A8C /* opicon_<32x32>.png */; };
+		CE5B3D6D1A36EFE600730A8C /* opicon_<512x512>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D661A36EFE600730A8C /* opicon_<512x512>.png */; };
+		CE5B3D6E1A36EFE600730A8C /* opicon_<64x64>.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5B3D671A36EFE600730A8C /* opicon_<64x64>.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		CE5B3D541A36D8D000730A8C /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		CE5B3D561A36D8D000730A8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE5B3D591A36D8D000730A8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE5B3D611A36EFE600730A8C /* opicon_<1024x1024>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<1024x1024>.png"; sourceTree = "<group>"; };
+		CE5B3D621A36EFE600730A8C /* opicon_<128x128>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<128x128>.png"; sourceTree = "<group>"; };
+		CE5B3D631A36EFE600730A8C /* opicon_<16x16>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<16x16>.png"; sourceTree = "<group>"; };
+		CE5B3D641A36EFE600730A8C /* opicon_<256x256>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<256x256>.png"; sourceTree = "<group>"; };
+		CE5B3D651A36EFE600730A8C /* opicon_<32x32>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<32x32>.png"; sourceTree = "<group>"; };
+		CE5B3D661A36EFE600730A8C /* opicon_<512x512>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<512x512>.png"; sourceTree = "<group>"; };
+		CE5B3D671A36EFE600730A8C /* opicon_<64x64>.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "opicon_<64x64>.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,7 @@
 				CE5B3D541A36D8D000730A8C /* AppDelegate.applescript */,
 				CE5B3D561A36D8D000730A8C /* Images.xcassets */,
 				CE5B3D581A36D8D000730A8C /* MainMenu.xib */,
+				CE5B3D601A36EFE600730A8C /* icons */,
 				CE5B3D501A36D8D000730A8C /* Supporting Files */,
 			);
 			path = updater;
@@ -80,6 +95,20 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		CE5B3D601A36EFE600730A8C /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CE5B3D611A36EFE600730A8C /* opicon_<1024x1024>.png */,
+				CE5B3D621A36EFE600730A8C /* opicon_<128x128>.png */,
+				CE5B3D631A36EFE600730A8C /* opicon_<16x16>.png */,
+				CE5B3D641A36EFE600730A8C /* opicon_<256x256>.png */,
+				CE5B3D651A36EFE600730A8C /* opicon_<32x32>.png */,
+				CE5B3D661A36EFE600730A8C /* opicon_<512x512>.png */,
+				CE5B3D671A36EFE600730A8C /* opicon_<64x64>.png */,
+			);
+			path = icons;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -138,8 +167,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5B3D6D1A36EFE600730A8C /* opicon_<512x512>.png in Resources */,
+				CE5B3D6A1A36EFE600730A8C /* opicon_<16x16>.png in Resources */,
+				CE5B3D681A36EFE600730A8C /* opicon_<1024x1024>.png in Resources */,
 				CE5B3D571A36D8D000730A8C /* Images.xcassets in Resources */,
+				CE5B3D691A36EFE600730A8C /* opicon_<128x128>.png in Resources */,
+				CE5B3D6B1A36EFE600730A8C /* opicon_<256x256>.png in Resources */,
+				CE5B3D6E1A36EFE600730A8C /* opicon_<64x64>.png in Resources */,
 				CE5B3D5A1A36D8D000730A8C /* MainMenu.xib in Resources */,
+				CE5B3D6C1A36EFE600730A8C /* opicon_<32x32>.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +322,7 @@
 				CE5B3D5F1A36D8D000730A8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
