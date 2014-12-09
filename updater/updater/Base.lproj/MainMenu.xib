@@ -697,7 +697,7 @@
                                             </connections>
                                         </button>
                                         <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Ut8-vm-Qi8">
-                                            <rect key="frame" x="39" y="5" width="398" height="20"/>
+                                            <rect key="frame" x="18" y="5" width="398" height="20"/>
                                         </progressIndicator>
                                     </subviews>
                                 </view>
