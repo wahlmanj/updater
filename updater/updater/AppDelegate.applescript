@@ -15,26 +15,18 @@ script AppDelegate
     property appupdate10ProgressBar : missing value
     
     on buttonhandlerupdate_(sender)
-        tell appupdateProgressBar to startAnimation:me -- another way
-        set animated to true
         display notification "OpenPlex Updated" with title "OpenPlex Status"
                 delay 2
         do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.7; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.7; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
 
         do shell script "killall updater"
-        tell appupdateProgressBar to stopAnimation:me -- another way
-        set animated to false
     end buttonhandlerupdate_
     
     on buttonhandlerupdate10_(sender)
-        tell appupdate10ProgressBar to startAnimation:me -- another way
-        set animated to true
         display notification "OpenPlex Updated" with title "OpenPlex Status"
         delay 2
          do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.6; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.6; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
          do shell script "killall updater"
-        tell appupdate10ProgressBar to stopAnimation:me -- another way
-        set animated to false
     end buttonhandlerupdate10_
 	
 	-- IBOutlets
