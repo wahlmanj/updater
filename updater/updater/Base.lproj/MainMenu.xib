@@ -675,7 +675,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="511" height="219"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button toolTip="Start PlexConnect" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="Ihh-Zn-LKV">
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="Ihh-Zn-LKV">
                         <rect key="frame" x="137" y="91" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
@@ -689,7 +689,7 @@
                             <action selector="buttonhandlerupdate:" target="Voe-Tx-rLC" id="6ld-Pg-gnD"/>
                         </connections>
                     </button>
-                    <button toolTip="Start PlexConnect" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="PHF-Jx-10p">
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="PHF-Jx-10p">
                         <rect key="frame" x="336" y="91" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
@@ -703,7 +703,7 @@
                             <action selector="buttonhandlerupdate10:" target="Voe-Tx-rLC" id="JKZ-tZ-Yv8"/>
                         </connections>
                     </button>
-                    <button toolTip="Start PlexConnect" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="yy2-3x-5ee">
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="yy2-3x-5ee">
                         <rect key="frame" x="236" y="91" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
@@ -717,7 +717,7 @@
                             <action selector="buttonhandlerupdate10:" target="Voe-Tx-rLC" id="FJW-dw-C0y"/>
                         </connections>
                     </button>
-                    <button toolTip="Start PlexConnect" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="8rs-PQ-pbs">
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="8rs-PQ-pbs">
                         <rect key="frame" x="37" y="91" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
@@ -731,7 +731,7 @@
                             <action selector="buttonhandlerupdate:" target="Voe-Tx-rLC" id="5hL-ub-Shh"/>
                         </connections>
                     </button>
-                    <button toolTip="Start PlexConnect" horizontalHuggingPriority="750" verticalHuggingPriority="750" id="nTH-HK-BZW">
+                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="nTH-HK-BZW">
                         <rect key="frame" x="435" y="91" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
