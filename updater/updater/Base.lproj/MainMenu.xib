@@ -704,7 +704,7 @@
                         </connections>
                     </button>
                     <button horizontalHuggingPriority="750" verticalHuggingPriority="750" id="yy2-3x-5ee">
-                        <rect key="frame" x="236" y="59" width="42" height="38"/>
+                        <rect key="frame" x="234" y="59" width="42" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <shadow key="shadow">
                             <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -764,7 +764,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="hNv-fp-Ob7">
-                        <rect key="frame" x="244" y="37" width="27" height="14"/>
+                        <rect key="frame" x="242" y="37" width="27" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="10.8" id="iBT-tQ-UTk">
                             <font key="font" metaFont="smallSystem"/>
@@ -791,7 +791,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="gnK-16-wwE">
-                        <rect key="frame" x="187" y="150" width="141" height="17"/>
+                        <rect key="frame" x="189" y="150" width="133" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="OpenPlex Updater" id="w4K-ds-DfF">
                             <font key="font" metaFont="system" size="15"/>
@@ -825,7 +825,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="T6X-8B-3js">
-                        <rect key="frame" x="217" y="20" width="80" height="14"/>
+                        <rect key="frame" x="215" y="20" width="80" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mountain Lion" id="2cy-Ds-7xA">
                             <font key="font" metaFont="smallSystem"/>
@@ -852,7 +852,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="sG3-iB-YTk">
-                        <rect key="frame" x="208" y="119" width="99" height="14"/>
+                        <rect key="frame" x="206" y="117" width="99" height="16"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Choose your OS" id="Mbr-38-X9d">
                             <font key="font" metaFont="cellTitle"/>
