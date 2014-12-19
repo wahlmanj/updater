@@ -15,9 +15,17 @@ script AppDelegate
     property appupdate10ProgressBar : missing value
     
     on buttonhandlerupdate_(sender)
-        display dialog "OpenPlex Updated" with title "OpenPlex Status"
-                delay 2
-                do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.7; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.7; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
+        set x to do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
+        if x is equal to "6" then
+            display dialog "Snow Leopard Detected, OpenPlex Updating..." with title "OpenPlex Status"
+            delay 1
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "7" then
+            display dialog "Lion Detected, OpenPlex Updating..." with title "OpenPlex Status"
+            delay 1
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
                 tell application "Finder"
                     if (exists file "Applications:OpenPlex:10.7:OpenPlex.app" of the startup disk) then
                         try
@@ -40,16 +48,28 @@ script AppDelegate
     end buttonhandlerupdate_
     
     on buttonhandlerupdate10_(sender)
-        display notification "OpenPlex Updated" with title "OpenPlex Status"
-        delay 2
-        do shell script "killall OpenPlex; purgeappbash.bash; cd /Applications/OpenPlex/10.6; ditto -xk OpenPlex.zip /Applications/OpenPlex/10.6; cp -R OpenPlex.app /Applications; cd /Applications; open OpenPlex.app"
+        set x to do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
+        if x is equal to "8" then
+            display notification "Mountain Lion Detected, OpenPlex Updating..." with title "OpenPlex Status"
+            delay 1
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "9" then
+            display notification "Mavericks Detected, OpenPlex Updating..." with title "OpenPlex Status"
+            delay 1
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "10" then
+            display dialog "Yosemite Detected, OpenPlex Updating..." with title "OpenPlex Status"
+            delay 1
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
         tell application "Finder"
             if (exists file "Applications:OpenPlex:10.6:OpenPlex.app" of the startup disk) then
                 try
-                do shell script "cd /Applications/OpenPlex/10.6; rm -R OpenPlex.app"
-                onerror
+                    do shell script "cd /Applications/OpenPlex/10.6; rm -R OpenPlex.app"
+                    onerror
                 end try
-                else
             end if
         end tell
         tell application "Finder"
@@ -58,10 +78,9 @@ script AppDelegate
                     do shell script "cd /Applications/OpenPlex/updater; rm -R updater.app"
                     onerror
                 end try
-                else
             end if
         end tell
-         do shell script "killall updater"
+        do shell script "killall updater"
     end buttonhandlerupdate10_
 	
 	-- IBOutlets
@@ -70,7 +89,39 @@ script AppDelegate
     
 	
 	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
+        set x to do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
+        if x is equal to "6" then
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "7" then
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "8" then
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "9" then
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        if x is equal to "10" then
+            do shell script "cd /Applications/OpenPlex; git pull"
+        end if
+        tell application "Finder"
+            if (exists file "Applications:OpenPlex:10.6:OpenPlex.app" of the startup disk) then
+                try
+                    do shell script "cd /Applications/OpenPlex/10.6; rm -R OpenPlex.app"
+                    onerror
+                end try
+            end if
+        end tell
+        tell application "Finder"
+            if (exists file "Applications:OpenPlex:updater:updater.app" of the startup disk) then
+                try
+                    do shell script "cd /Applications/OpenPlex/updater; rm -R updater.app"
+                    onerror
+                end try
+            end if
+        end tell
+        do shell script "killall updater"
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
