@@ -89,22 +89,7 @@ script AppDelegate
     
 	
 	on applicationWillFinishLaunching_(aNotification)
-        set x to do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
-        if x is equal to "6" then
-            do shell script "cd /Applications/OpenPlex; git pull"
-        end if
-        if x is equal to "7" then
-            do shell script "cd /Applications/OpenPlex; git pull"
-        end if
-        if x is equal to "8" then
-            do shell script "cd /Applications/OpenPlex; git pull"
-        end if
-        if x is equal to "9" then
-            do shell script "cd /Applications/OpenPlex; git pull"
-        end if
-        if x is equal to "10" then
-            do shell script "cd /Applications/OpenPlex; git pull"
-        end if
+        do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash; cd /Applications/OpenPlex; export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH; git pull"
         tell application "Finder"
             if (exists file "Applications:OpenPlex:10.6:OpenPlex.app" of the startup disk) then
                 try
