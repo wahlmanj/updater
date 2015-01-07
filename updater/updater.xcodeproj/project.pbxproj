@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE53A4BB1A39ADA100B0AAC0 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = CE53A4B61A39ADA100B0AAC0 /* lion.png */; };
-		CE53A4BC1A39ADA100B0AAC0 /* Mavericks.png in Resources */ = {isa = PBXBuildFile; fileRef = CE53A4B71A39ADA100B0AAC0 /* Mavericks.png */; };
-		CE53A4BD1A39ADA100B0AAC0 /* Mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = CE53A4B81A39ADA100B0AAC0 /* Mountain.png */; };
-		CE53A4BE1A39ADA100B0AAC0 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE53A4B91A39ADA100B0AAC0 /* snow.png */; };
-		CE53A4BF1A39ADA100B0AAC0 /* yoemite.png in Resources */ = {isa = PBXBuildFile; fileRef = CE53A4BA1A39ADA100B0AAC0 /* yoemite.png */; };
 		CE5B3D4E1A36D8D000730A8C /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5B3D4D1A36D8D000730A8C /* AppleScriptObjC.framework */; };
 		CE5B3D531A36D8D000730A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3D521A36D8D000730A8C /* main.m */; };
 		CE5B3D551A36D8D000730A8C /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = CE5B3D541A36D8D000730A8C /* AppDelegate.applescript */; };
@@ -27,11 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE53A4B61A39ADA100B0AAC0 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
-		CE53A4B71A39ADA100B0AAC0 /* Mavericks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mavericks.png; sourceTree = "<group>"; };
-		CE53A4B81A39ADA100B0AAC0 /* Mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mountain.png; sourceTree = "<group>"; };
-		CE53A4B91A39ADA100B0AAC0 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
-		CE53A4BA1A39ADA100B0AAC0 /* yoemite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoemite.png; sourceTree = "<group>"; };
 		CE5B3D4A1A36D8D000730A8C /* updater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = updater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5B3D4D1A36D8D000730A8C /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		CE5B3D511A36D8D000730A8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,11 +99,6 @@
 		CE5B3D601A36EFE600730A8C /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				CE53A4B61A39ADA100B0AAC0 /* lion.png */,
-				CE53A4B71A39ADA100B0AAC0 /* Mavericks.png */,
-				CE53A4B81A39ADA100B0AAC0 /* Mountain.png */,
-				CE53A4B91A39ADA100B0AAC0 /* snow.png */,
-				CE53A4BA1A39ADA100B0AAC0 /* yoemite.png */,
 				CE5B3D611A36EFE600730A8C /* opicon_<1024x1024>.png */,
 				CE5B3D621A36EFE600730A8C /* opicon_<128x128>.png */,
 				CE5B3D631A36EFE600730A8C /* opicon_<16x16>.png */,
@@ -182,17 +167,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE53A4BF1A39ADA100B0AAC0 /* yoemite.png in Resources */,
 				CE5B3D6D1A36EFE600730A8C /* opicon_<512x512>.png in Resources */,
-				CE53A4BC1A39ADA100B0AAC0 /* Mavericks.png in Resources */,
-				CE53A4BD1A39ADA100B0AAC0 /* Mountain.png in Resources */,
-				CE53A4BB1A39ADA100B0AAC0 /* lion.png in Resources */,
 				CE5B3D6A1A36EFE600730A8C /* opicon_<16x16>.png in Resources */,
 				CE5B3D681A36EFE600730A8C /* opicon_<1024x1024>.png in Resources */,
 				CE5B3D571A36D8D000730A8C /* Images.xcassets in Resources */,
 				CE5B3D691A36EFE600730A8C /* opicon_<128x128>.png in Resources */,
 				CE5B3D6B1A36EFE600730A8C /* opicon_<256x256>.png in Resources */,
-				CE53A4BE1A39ADA100B0AAC0 /* snow.png in Resources */,
 				CE5B3D6E1A36EFE600730A8C /* opicon_<64x64>.png in Resources */,
 				CE5B3D5A1A36D8D000730A8C /* MainMenu.xib in Resources */,
 				CE5B3D6C1A36EFE600730A8C /* opicon_<32x32>.png in Resources */,
