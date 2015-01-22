@@ -13,8 +13,8 @@ script AppDelegate
 	property theWindow : missing value
     
 	on applicationWillFinishLaunching_(aNotification)
-        set x to do shell script "cd ~/Library/Application\\ Support/OpenPlex; git reset --hard"
-        display dialog "Current Version " & x buttons "Syncing app" default button "Syncing app" giving up after 4
+        set x to do shell script "cd ~/Library/Application\\ Support/OpenPlex; export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH; git reset --hard"
+        display dialog "Current Version " & x buttons {"Updating"} giving up after 4
         try
             do shell script "afplay /System/Library/Sounds/Glass.aiff"
         end try
