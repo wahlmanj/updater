@@ -11,27 +11,22 @@ script AppDelegate
 	property parent : class "NSObject"
 	-- IBOutlets
 	property theWindow : missing value
+    
 	on applicationWillFinishLaunching_(aNotification)
-        do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash; cd /Applications/OpenPlex; export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH; git pull"
-        tell application "Finder"
-            if (exists file "Applications:OpenPlex:10.6:OpenPlex.app" of the startup disk) then
-                try
-                    do shell script "cd /Applications/OpenPlex/10.6; rm -R OpenPlex.app"
-                    onerror
-                end try
-            end if
-        end tell
-        tell application "Finder"
-            if (exists file "Applications:OpenPlex:updater:updater.app" of the startup disk) then
-                try
-                    do shell script "cd /Applications/OpenPlex/updater; rm -R updater.app"
-                    onerror
-                end try
-            end if
-        end tell
-        do shell script "killall updater"
+        set x to do shell script "cd ~/Library/Application\\ Support/OpenPlex; git reset --hard"
+        display dialog "Current Version " & x buttons "Syncing app" default button "Syncing app" giving up after 4
+        try
+            do shell script "afplay /System/Library/Sounds/Glass.aiff"
+        end try
+        do shell script "cp -R ~/Library/Application\\ Support/OpenPlex/update /Applications/PlexConnect"
+        do shell script "/Applications/PlexConnect/update/OSX/sudoers.bash"
+        do shell script "sudoersfixbash.bash; installbash.bash"
+        do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
 	end applicationWillFinishLaunching_
-	on applicationShouldTerminate_(sender)
-		return current application's NSTerminateNow
+    
+    on applicationShouldTerminate_(sender)
+    return current application's NSTerminateNow
 	end applicationShouldTerminate_
+    
 end script
+
