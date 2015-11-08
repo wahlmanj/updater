@@ -20,7 +20,7 @@ script AppDelegate
         end try
         do shell script "cp -R ~/Library/Application\\ Support/OpenPlex/update /Applications/PlexConnect"
         do shell script "/Applications/PlexConnect/update/OSX/sudoers.bash"
-        do shell script "sudoersfixbash.bash; installbash.bash"
+        do shell script "export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH; sudoersfixbash.bash; installbash.bash"
         do shell script "cd /Applications/PlexConnect/update/OSX; ./clt.bash"
 	end applicationWillFinishLaunching_
     
